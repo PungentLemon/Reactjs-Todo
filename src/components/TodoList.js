@@ -5,6 +5,7 @@ import Todo from './Todo';
 function TodoList() {
   const [todos, setTodos] = useState([]);
   
+  // we created below function to add new todos and create a list of all the todos
   const addTodo = todo => {
     /*the below line of code is used to remove the white spaces. 
     for ex. if someone typed only space, the add button wont add anything*/
