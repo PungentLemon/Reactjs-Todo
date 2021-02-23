@@ -5,9 +5,9 @@ import Todo from './Todo';
 function TodoList() {
   const [todos, setTodos] = useState([]);
   
-  /*the below line of code is used to remove the white spaces. 
-    for ex. if someone typed only space, the add button wont add anything*/
   const addTodo = todo => {
+    /*the below line of code is used to remove the white spaces. 
+    for ex. if someone typed only space, the add button wont add anything*/
     if (!todo.text || /^\s*$/.test(todo.text)) {
       return;
     }
