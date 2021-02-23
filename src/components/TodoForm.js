@@ -15,9 +15,10 @@ function TodoForm(props) {
 
   const handleSubmit = e => {
     e.preventDefault();
-
+    
+    //below code creates dictionary when it is submitted. and empty the input box
     props.onSubmit({
-      id: Math.floor(Math.random() * 10000),
+      id: Math.floor(Math.random() * 10000),//this generates random number between n and 10,000
       text: input
     });
     setInput('');
